@@ -1,0 +1,90 @@
+﻿body
+{
+    /*Cover whole page*/
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    /*Cover whole page*/
+}
+
+.videoSection video
+{
+    /*Below values are neccessary for positioning interactive elements on top of the video*/
+    position: absolute;
+    z-index: 1;
+    /*Below values are neccessary for positioning interactive elements on top of the video*/
+}
+
+.interactiveContainer
+{
+    /*TODO delete these*/
+    background-color: rgba(89, 127, 209, 0.2);
+    /*Below values are neccessary for positioning interactive elements on top of the video*/
+    position: absolute;
+    z-index: 2;
+    /*Below values are neccessary for positioning interactive elements on top of the video*/
+}
+
+.playing .interactive
+{
+    /*Smooth transitions when playing*/
+    -moz-transition: all 40ms ease;
+    -o-transition: all 40ms ease;
+    -webkit-transition: all 40ms ease;
+    transition: all 40ms ease;
+    /*Smooth transitions when playing*/
+}
+
+.interactive
+{
+    position: absolute;
+    /*Transform origin provides centered scaling*/
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    /*Transform origin provides centered scaling*/
+}
+
+#testCenter
+{
+    background-color: #f00;
+    opacity: 0.4;
+    width: 40px;
+    height: 44px;
+    /*These values have to be half of the width-height*/
+    /*Otherwise interactive elements won't look centered on position*/
+    /*margin-left: -20px;
+    margin-top: -22px;*/
+    /*These values have to be half of the width-height*/
+}
+
+#testCircle
+{
+    background-color: #ff6a00;
+    opacity: 0.4;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    /*These values have to be half of the width-height*/
+    /*Otherwise interactive elements won't look centered on position*/
+    /*margin-left: -22px;
+    margin-top: -22px;*/
+    /*These values have to be half of the width-height*/
+}
+
+#testTriangle
+{
+    width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 20px solid #597fd1;
+
+    /*These values have to be half of the width-height*/
+    /*Otherwise interactive elements won't look centered on position*/
+    /*margin-left: -10px;
+    margin-top: -10px;*/
+    /*These values have to be half of the width-height*/
+}
